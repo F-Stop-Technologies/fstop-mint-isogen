@@ -1,5 +1,5 @@
 # fstop-mint-installer *UNDER CONSTRUCTION*
-Install F-Stop Mint on LMDE 5
+Install F-Stop Mint on Debian Sid
 
 ## NOTE
 to test (use in a vm for now):
