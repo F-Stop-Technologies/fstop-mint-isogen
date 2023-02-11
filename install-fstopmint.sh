@@ -45,7 +45,7 @@ read -p "Do you want to install XFCE? Our systems were made for this DE! (y/n) "
 if [ "$response" == "y" ]; then
     sudo apt-get install xfce4
 else
-    echo "Ok, let's skip the XFCE for now."
+    echo "Ok, let's skip XFCE for now."
 fi
 
 
