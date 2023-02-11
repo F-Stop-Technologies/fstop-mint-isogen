@@ -44,6 +44,7 @@ sudo -u $USER pip3 install ultralytics --break-system-packages || echo "Error in
 
 rm -rf /home/tester/.mozilla
 
+rm -rf /linux-live
 git clone https://github.com/Tomas-M/linux-live /linux-live
 cd /linux-live
 chmod +x build
