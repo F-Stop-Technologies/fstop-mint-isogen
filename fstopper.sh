@@ -27,7 +27,7 @@ sudo rm /tmp/update-custom || "Update custom not exist (normal)"
 sudo wget -O /tmp/update-custom https://raw.githubusercontent.com/F-Stop-Technologies/node-get/main/update-custom-goodies
 sudo bash /tmp/update-custom
   
-rm -rf /home/tester/.mozilla /tmp/* /tmp/*.*
+rm -rf /home/tester/.mozilla /tmp/* /tmp/*.* #clean up the workspace before we continue!
 
 rm -rf /linux-live
 git clone https://github.com/Tomas-M/linux-live /linux-live
@@ -38,4 +38,4 @@ echo "Building F-Stop Mint (This'll take awhile!)"
 echo "Building iso (this may take a minute!)"
 sudo bash /tmp/gen_linux_iso.sh
 
-echo "Generated!"
+echo "Generated! Go to /tmp in your file manager and copy the iso!"
