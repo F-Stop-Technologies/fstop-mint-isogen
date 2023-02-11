@@ -25,8 +25,9 @@ sudo wget -O /fstop-python-folderimagedetection/recognize.py https://raw.githubu
 sudo wget -O /fstop-python-folderimagedetection/yolov8n.pt https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
 
 sudo apt install -y python3-torch python3-tk python3-numpy python3-torchvision
+
 sudo -u $USER pip3 install openai duckduckgo3 requests python-dotenv colorama
 sudo -u $USER pip3 install opencv-python
-
 sudo -u $USER pip3 install ultralytics || echo "Error installing ultralytics, you won't be able to use image detection!"
+
 echo "Installed!"
