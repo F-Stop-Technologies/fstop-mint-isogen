@@ -2,7 +2,7 @@
 
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install -y git wget wine dosbox flatpak snapd python3 feh psmisc python3-pip firmware-linux-nonfree firmware-misc-nonfree
+sudo apt install -y git wget wine dosbox flatpak snapd python3 psmisc python3-pip firmware-linux-nonfree firmware-misc-nonfree
 sudo wget -O /usr/bin/node-get https://raw.githubusercontent.com/F-Stop-Technologies/node-get/main/node-get
 sudo chmod +x /usr/bin/node-get
 
@@ -21,7 +21,6 @@ chmod +x /usr/bin/roblox-easyinstall
 sudo rm /fstop-wallpapers/  || echo "Wallpapers not installed yet, not removing."
 sudo git clone https://github.com/F-Stop-Technologies/wallpapers /fstop-wallpapers/
 sudo chmod -R 777 /fstop-wallpapers
-feh --bg-scale /fstop-wallpapers/team-programming.png
 
 sudo mkdir /fstop-python-nodefun/
 sudo wget -O /fstop-python-nodefun/duckbart.py https://raw.githubusercontent.com/F-Stop-Technologies/duckbart-fstop/main/main.py
