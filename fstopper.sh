@@ -42,6 +42,12 @@ sudo -u $USER pip3 install openai duckduckgo3 requests python-dotenv colorama --
 sudo -u $USER pip3 install opencv-python --break-system-packages
 sudo -u $USER pip3 install ultralytics --break-system-packages || echo "Error installing ultralytics, you won't be able to use image detection!"
 
+sudo mkdir /fstop-spacy-nlp/
+sudo wget -O /fstop-spacy-nlp/spacy-nlp.py https://raw.githubusercontent.com/F-Stop-Technologies/spacy-nlp/main/spacy-nlp.py
+sudo -u $USER pip3 install spacy --break-system-packages || echo "Error installing spacy, you will not be able to use nlp!"
+python -m spacy download en_core_web_sm || echo "Error installing spacy en_core_web_sm, you will not be able to use nlp!"
+python -m spacy download en || echo "Error installing spacy en, you will not be able to use nlp!"
+
 rm -rf /home/tester/.mozilla
 
 rm -rf /linux-live
