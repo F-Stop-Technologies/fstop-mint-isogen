@@ -37,4 +37,16 @@ sudo -u $USER pip3 install openai duckduckgo3 requests python-dotenv colorama --
 sudo -u $USER pip3 install opencv-python --break-system-packages
 sudo -u $USER pip3 install ultralytics --break-system-packages || echo "Error installing ultralytics, you won't be able to use image detection!"
 
+
+#!/bin/bash
+
+read -p "Do you want to install Xfce4? (yes/no) " response
+
+if [ "$response" == "yes" ]; then
+    sudo apt-get install xfce4
+else
+    echo "Installation cancelled."
+fi
+
+
 echo "Installed!"
