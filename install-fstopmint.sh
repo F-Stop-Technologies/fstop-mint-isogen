@@ -33,6 +33,7 @@ rm -rf /home/tester/.mozilla
 
 git clone https://github.com/Tomas-M/linux-live /linux-live
 cd /linux-live
-./build.sh
+chmod +x build
+./build
 
 echo "Generated!"
