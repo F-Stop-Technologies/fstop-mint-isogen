@@ -23,15 +23,16 @@ sudo chmod +x /usr/bin/nvidia-easyinstall
 echo "sudo node-get install net.brinkervii.grapejuice" > /usr/bin/roblox-easyinstall
 chmod +x /usr/bin/roblox-easyinstall
 
-sudo rm /fstop-wallpapers/  || echo "Wallpapers not installed yet, not reinstalling but installing."
+sudo rm -rf /fstop-wallpapers/  || echo "Wallpapers not installed yet, not reinstalling but installing."
 sudo git clone https://github.com/F-Stop-Technologies/wallpapers /fstop-wallpapers/
 sudo chmod -R 777 /fstop-wallpapers
 
+sudo rm -rf /fstop-python-nodefun/ || echo "NodeFun not installed yet, not reinstalling but installing."
 sudo mkdir /fstop-python-nodefun/
 sudo wget -O /fstop-python-nodefun/duckbart.py https://raw.githubusercontent.com/F-Stop-Technologies/duckbart-fstop/main/main.py
 sudo wget -O /fstop-python-nodefun/blog-gen.py https://raw.githubusercontent.com/F-Stop-Technologies/blogger_openai_fstop/main/main.py
 
-sudo rm /fstop-python-folderimagedetection/ || echo "Image detection not installed yet, not reinstalling but installing."
+sudo rm -rf /fstop-python-folderimagedetection/ || echo "Image detection not installed yet, not reinstalling but installing."
 sudo git clone https://github.com/F-Stop-Technologies/yolov8-fstop /fstop-python-folderimagedetection/
 sudo wget -O /fstop-python-folderimagedetection/recognize.py https://raw.githubusercontent.com/F-Stop-Technologies/yolov8-imageobjectdetection/main/detect.py
 sudo wget -O /fstop-python-folderimagedetection/yolov8n.pt https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
@@ -42,6 +43,7 @@ sudo -u $USER pip3 install openai duckduckgo3 requests python-dotenv colorama --
 sudo -u $USER pip3 install opencv-python --break-system-packages
 sudo -u $USER pip3 install ultralytics --break-system-packages || echo "Error installing ultralytics, you won't be able to use image detection!"
 
+sudo rm -rf /fstop-spacy-nlt/ || echo "NLP not installed yet, not reinstalling but installing."
 sudo mkdir /fstop-spacy-nlp/
 sudo wget -O /fstop-spacy-nlp/spacy-nlp.py https://raw.githubusercontent.com/F-Stop-Technologies/spacy-nlp/main/spacy-nlp.py
 sudo -u $USER pip3 install spacy --break-system-packages || echo "Error installing spacy, you will not be able to use nlp!"
