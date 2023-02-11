@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo rm -rf /tmp/*
-sudo rm -f /tmp/*.*
+sudo rm -rf /tmp/* /home/remastersys/*
+sudo rm -f /tmp/*.* /home/remastersys/*.*
 echo "Preparing packages..."
 sudo dpkg --add-architecture i386
 sudo apt update
@@ -29,6 +29,6 @@ sudo bash /tmp/update-custom
   
 rm -rf /home/tester/.mozilla /tmp/* /tmp/*.* #clean up the workspace before we continue!
 
-remastersys-gui
+sudo remastersys-gui
 
 echo "Generated! Go to /tmp in your file manager and copy the iso!"
