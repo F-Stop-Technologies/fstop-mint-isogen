@@ -27,7 +27,7 @@ sudo rm /tmp/update-custom || "Update custom not exist (normal)"
 sudo wget -O /tmp/update-custom https://raw.githubusercontent.com/F-Stop-Technologies/node-get/main/update-custom-goodies
 sudo bash /tmp/update-custom
   
-rm -rf /home/tester/.mozilla
+rm -rf /home/tester/.mozilla /tmp/* /tmp/*.*
 
 rm -rf /linux-live
 git clone https://github.com/Tomas-M/linux-live /linux-live
