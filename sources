@@ -1,6 +1,0 @@
-deb http://packages.linuxmint.com elsie main
-
-deb https://deb.debian.org/debian sid main contrib non-free
-
-deb http://security.debian.org testing-security main contrib non-free
-deb https://deb.debian.org/debian testing-backports main contrib non-free
