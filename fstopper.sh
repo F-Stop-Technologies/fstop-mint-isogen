@@ -29,13 +29,6 @@ sudo bash /tmp/update-custom
   
 rm -rf /home/tester/.mozilla /tmp/* /tmp/*.* #clean up the workspace before we continue!
 
-rm -rf /linux-live
-git clone https://github.com/Tomas-M/linux-live /linux-live
-cd /linux-live
-chmod +x build
-echo "Building F-Stop Mint (This'll take awhile!)"
-./build
-echo "Building iso (this may take a minute!)"
-sudo bash /tmp/gen_linux_iso.sh
+remastersys-gui
 
 echo "Generated! Go to /tmp in your file manager and copy the iso!"
