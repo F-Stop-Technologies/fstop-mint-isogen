@@ -1,9 +1,11 @@
 #!/bin/bash
 
-print "Preparing packages..."
+sudo rm -rf /tmp/*
+sudo rm -f /tmp/*.*
+echo "Preparing packages..."
 sudo dpkg --add-architecture i386
 sudo apt update
-print "Ensuring the important stuff's up-to-date..."
+echo "Ensuring the important stuff's up-to-date..."
 sudo apt-get upgrade
 sudo apt install genisoimage unzip 7zip debian-installer
 sudo apt install -y git wget wine dosbox flatpak snapd python3 psmisc python3-pip bcmwl-kernel-source firmware-linux-nonfree firmware-misc-nonfree
