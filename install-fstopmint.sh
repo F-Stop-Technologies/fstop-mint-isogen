@@ -1,10 +1,10 @@
+#!/bin/bash
+
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install -y git wget wine dosbox flatpak snapd python3 python3-pip firmware-linux-nonfree firmware-misc-nonfree
 sudo wget -O /usr/bin/node-get https://raw.githubusercontent.com/F-Stop-Technologies/node-get/main/node-get
 sudo chmod +x /usr/bin/node-get
-
-#!/bin/bash
 
 # Check if NVIDIA card is present
 echo "Check for NVIDIA card..."
@@ -36,6 +36,6 @@ rm $ffpath/prefs.js
 sudo -u $USER wget -O $ffpath/prefs.js https://raw.githubusercontent.com/F-Stop-Technologies/prefs.js/main/prefs.js
 
 pip3 install ultralytics || echo "Error installing ultralytics, you won't be able to use image detection!"
-sudo apt dist-upgrade #Note: only run dist-upgrade once a week!
+NEEDRESTART_MODE=a apt dist-upgrade #Note: only run dist-upgrade once a week!
 echo "Installed! Rebooting in 30 seconds.... (CTRL+Z to abort)"
 bash -c "sleep 30; shutdown -r now"
