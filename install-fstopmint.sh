@@ -1,7 +1,7 @@
 sudo apt update
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install git wget wine dosbox flatpak python3 python3-pip
+sudo apt install -y git wget wine dosbox flatpak python3 python3-pip
 
 sudo wget -O /usr/bin/node-get https://raw.githubusercontent.com/F-Stop-Technologies/node-get/main/node-get
 sudo chmod +x /usr/bin/node-get
