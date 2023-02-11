@@ -21,4 +21,4 @@ pip3 install openai duckduckgo3 requests python-dotenv colorama python3-tk pytho
 pip3 install opencv-python
 pip3 install ultralytics
 echo "Installed! Rebooting in 30 seconds.... (CTRL+Z to abort)"
-bash -c "sleep 30; shutdown -r now"&
+bash -c "sleep 30; shutdown -r now"
