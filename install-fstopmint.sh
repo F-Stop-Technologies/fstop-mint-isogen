@@ -34,7 +34,7 @@ wget https://github.com/Tomas-M/linux-live/archive/refs/tags/v2.10.zip -o /linux
 rm -rf /home/tester/.mozilla
 
 unzip -d / /linux-live.zip
-
+sudo rm linux-live.zip
 cd /linux-live-v2.1.0
 ./build.sh
 
