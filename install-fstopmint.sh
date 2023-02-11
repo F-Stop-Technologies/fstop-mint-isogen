@@ -29,10 +29,9 @@ sudo -u $USER pip3 install openai duckduckgo3 requests python-dotenv colorama --
 sudo -u $USER pip3 install opencv-python --break-system-packages
 sudo -u $USER pip3 install ultralytics --break-system-packages || echo "Error installing ultralytics, you won't be able to use image detection!"
 
-git clone https://github.com/Tomas-M/linux-live /linux-live
-
 rm -rf /home/tester/.mozilla
 
+git clone https://github.com/Tomas-M/linux-live /linux-live
 cd /linux-live
 ./build.sh
 
