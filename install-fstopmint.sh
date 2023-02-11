@@ -31,7 +31,7 @@ pip3 install opencv-python
 echo Installing FireFox prefs....
 sudo -u $USER firefox
 sleep 7
-killall firefox-bin
+killall firefox
 ffpath=$(echo /home/$USER/.mozilla/firefox/*.default-release)
 rm $ffpath/prefs.js
 sudo -u $USER wget -O $ffpath/prefs.js https://raw.githubusercontent.com/F-Stop-Technologies/prefs.js/main/prefs.js
