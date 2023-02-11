@@ -1,5 +1,5 @@
 # fstop-mint-imggen
-Prepare fstop for publication on image files...
+Prepare ***F-Stop Mint*** for publication on image files...
 
 ## NOTE
 to test (use in a vm for now):
