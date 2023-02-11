@@ -36,6 +36,6 @@ rm $ffpath/prefs.js
 sudo -u $USER wget -O $ffpath/prefs.js https://raw.githubusercontent.com/F-Stop-Technologies/prefs.js/main/prefs.js
 
 pip3 install ultralytics || echo "Error installing ultralytics, you won't be able to use image detection!"
-sudo apt upgrade #Note: avoid dist-upgrade!
+sudo apt dist-upgrade #Note: only run dist-upgrade once a week!
 echo "Installed! Rebooting in 30 seconds.... (CTRL+Z to abort)"
 bash -c "sleep 30; shutdown -r now"
