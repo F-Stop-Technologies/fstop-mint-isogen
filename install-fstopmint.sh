@@ -40,7 +40,7 @@ sudo -u $USER pip3 install ultralytics --break-system-packages || echo "Error in
 
 #!/bin/bash
 
-read -p "Do you want to install XFCE? Our system was made for this DE! (y/n) " response
+read -p "Do you want to install XFCE? Our systems were made for this DE! (y/n) " response
 
 if [ "$response" == "y" ]; then
     sudo apt-get install xfce4
