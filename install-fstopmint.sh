@@ -18,7 +18,7 @@ fi
 echo "sudo node-get install net.brinkervii.grapejuice" > /usr/bin/roblox-easyinstall
 chmod +x /usr/bin/roblox-easyinstall
 
-sudo rm /fstop-wallpapers/  || echo "Wallpapers not installed yet, not removing."
+sudo rm /fstop-wallpapers/  || echo "Wallpapers not installed yet, not reinstalling but installing."
 sudo git clone https://github.com/F-Stop-Technologies/wallpapers /fstop-wallpapers/
 sudo chmod -R 777 /fstop-wallpapers
 
@@ -26,7 +26,7 @@ sudo mkdir /fstop-python-nodefun/
 sudo wget -O /fstop-python-nodefun/duckbart.py https://raw.githubusercontent.com/F-Stop-Technologies/duckbart-fstop/main/main.py
 sudo wget -O /fstop-python-nodefun/blog-gen.py https://raw.githubusercontent.com/F-Stop-Technologies/blogger_openai_fstop/main/main.py
 
-sudo rm /fstop-python-folderimagedetection/ || echo "Image detection not installed yet, not removing."
+sudo rm /fstop-python-folderimagedetection/ || echo "Image detection not installed yet, not reinstalling but installing."
 sudo git clone https://github.com/F-Stop-Technologies/yolov8-fstop /fstop-python-folderimagedetection/
 sudo wget -O /fstop-python-folderimagedetection/recognize.py https://raw.githubusercontent.com/F-Stop-Technologies/yolov8-imageobjectdetection/main/detect.py
 sudo wget -O /fstop-python-folderimagedetection/yolov8n.pt https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
