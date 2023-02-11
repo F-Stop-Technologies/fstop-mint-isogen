@@ -1,4 +1,4 @@
-# fstop-mint-isogen *UNDER CONSTRUCTION*
+# fstop-mint-imggen
 Prepare fstop for publication on image files...
 
 ## NOTE
