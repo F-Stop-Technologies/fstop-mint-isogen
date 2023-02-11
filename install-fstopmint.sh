@@ -40,9 +40,9 @@ sudo -u $USER pip3 install ultralytics --break-system-packages || echo "Error in
 
 #!/bin/bash
 
-read -p "Do you want to install Xfce4? (yes/no) " response
+read -p "Do you want to install Xfce4? Our system was made for this DE! (y/n) " response
 
-if [ "$response" == "yes" ]; then
+if [ "$response" == "y" ]; then
     sudo apt-get install xfce4
 else
     echo "Installation cancelled."
