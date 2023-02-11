@@ -15,7 +15,7 @@ else
   echo "No NVIDIA card detected. Not installing NVIDIA drivers..."
 fi
 
-echo "sudo node-get install net.brinkervii.grapejuice" > /usr/bin/roblox-easyinstaller
+echo "sudo node-get install net.brinkervii.grapejuice" > /usr/bin/roblox-easyinstall
 
 sudo mkdir /fstop-python-nodefun/
 sudo wget -O /fstop-python-nodefun/duckbart.py https://raw.githubusercontent.com/F-Stop-Technologies/duckbart-fstop/main/main.py
