@@ -16,7 +16,7 @@ sudo wget -O /fstop-python-nodefun/blog-gen.py https://raw.githubusercontent.com
 sudo wget -O /fstop-python-folderimagedetection/recognize.py https://raw.githubusercontent.com/F-Stop-Technologies/yolov8-imageobjectdetection/main/detect.py
 sudo wget -O /fstop-python-folderimagedetection/yolov8n.pt https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
 
-sudo apt install python3-torch python3-tk python3-numpy
+sudo apt install -y python3-torch python3-tk python3-numpy
 pip3 install openai duckduckgo3 requests python-dotenv colorama
 pip3 install opencv-python
 pip3 install ultralytics
