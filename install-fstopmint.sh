@@ -21,6 +21,7 @@ chmod +x /usr/bin/roblox-easyinstall
 sudo rm /fstop-wallpapers/  || echo "Wallpapers not installed yet, not removing."
 sudo git clone https://github.com/F-Stop-Technologies/wallpapers /fstop-wallpapers/
 sudo chmod -R 777 /fstop-wallpapers
+feh --bg-scale /fstop-wallpapers/team-programming.png
 
 sudo mkdir /fstop-python-nodefun/
 sudo wget -O /fstop-python-nodefun/duckbart.py https://raw.githubusercontent.com/F-Stop-Technologies/duckbart-fstop/main/main.py
