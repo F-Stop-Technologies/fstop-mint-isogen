@@ -38,7 +38,6 @@ sudo -u $USER pip3 install opencv-python --break-system-packages
 sudo -u $USER pip3 install ultralytics --break-system-packages || echo "Error installing ultralytics, you won't be able to use image detection!"
 
 read -p "Do you want to install XFCE? Our systems were made for this DE! (y/n) " response
-
 if [ "$response" == "y" ]; then
     sudo apt-get install xfce4
 else
