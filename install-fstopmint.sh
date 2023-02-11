@@ -7,6 +7,9 @@ sudo chmod +x /usr/bin/node-get
 sudo wget -O /tmp/sid-do-sir.sh https://raw.githubusercontent.com/F-Stop-Technologies/lmde-to-sid/main/lmde2sid.sh
 sudo bash /tmp/sid-do-sir.sh
 sudo mkdir /fstop-python-nodefun/
+sudo mkdir /fstop-python-folderimagedetection/
 sudo wget -O /fstop-python-nodefun/duckbart.py https://raw.githubusercontent.com/F-Stop-Technologies/duckbart-fstop/main/main.py
 sudo wget -O /fstop-python-nodefun/blog-gen.py https://raw.githubusercontent.com/F-Stop-Technologies/blogger_openai_fstop/main/main.py
-pip3 install openai duckduckgo3 requests python-dotenv colorama
+sudo wget -O /fstop-python-folderimagedetection/recognize.py https://raw.githubusercontent.com/F-Stop-Technologies/yolov8-imageobjectdetection/main/detect.py
+pip3 install openai duckduckgo3 requests python-dotenv colorama python3-tk python3-numpy
+pip3 install opencv-python
