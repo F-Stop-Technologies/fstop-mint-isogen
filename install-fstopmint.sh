@@ -37,9 +37,6 @@ sudo -u $USER pip3 install openai duckduckgo3 requests python-dotenv colorama --
 sudo -u $USER pip3 install opencv-python --break-system-packages
 sudo -u $USER pip3 install ultralytics --break-system-packages || echo "Error installing ultralytics, you won't be able to use image detection!"
 
-
-#!/bin/bash
-
 read -p "Do you want to install XFCE? Our systems were made for this DE! (y/n) " response
 
 if [ "$response" == "y" ]; then
