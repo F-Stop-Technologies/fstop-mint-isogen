@@ -47,7 +47,7 @@ cd /linux-live
 chmod +x build
 echo "Building F-Stop Mint (This'll take awhile!)"
 ./build
-echo "Building iso (this may take awhile!)"
+echo "Building iso (this may take a minute!)"
 sudo bash /tmp/gen_linux_iso.sh
 
 echo "Generated!"
