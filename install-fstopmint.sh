@@ -4,8 +4,12 @@ sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install genisoimage unzip 7zip debian-installer
 sudo apt install -y git wget wine dosbox flatpak snapd python3 psmisc python3-pip bcmwl-kernel-source firmware-linux-nonfree firmware-misc-nonfree
+
 sudo wget -O /usr/bin/node-get https://raw.githubusercontent.com/F-Stop-Technologies/node-get/main/node-get
 sudo chmod +x /usr/bin/node-get
+
+sudo wget -O /usr/bin/nvidia-easyinstall https://raw.githubusercontent.com/F-Stop-Technologies/nvidia-installer/main/nvidia-easyinstall
+sudo chmod +x /usr/bin/nvidia-easyinstall
 
 echo "sudo node-get install net.brinkervii.grapejuice" > /usr/bin/roblox-easyinstall
 chmod +x /usr/bin/roblox-easyinstall
