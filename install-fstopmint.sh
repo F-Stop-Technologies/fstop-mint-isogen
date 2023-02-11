@@ -28,13 +28,5 @@ sudo apt install -y python3-torch python3-tk python3-numpy python3-torchvision
 sudo -u $USER pip3 install openai duckduckgo3 requests python-dotenv colorama
 sudo -u $USER pip3 install opencv-python
 
-echo Installing FireFox prefs....
-sudo -u $USER firefox
-sleep 7
-killall firefox
-ffpath=$(echo /home/$USER/.mozilla/firefox/*.default-release)
-rm $ffpath/prefs.js
-sudo -u $USER wget -O $ffpath/prefs.js https://raw.githubusercontent.com/F-Stop-Technologies/prefs.js/main/prefs.js
-
 sudo -u $USER pip3 install ultralytics || echo "Error installing ultralytics, you won't be able to use image detection!"
 echo "Installed!"
