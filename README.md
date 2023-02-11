@@ -1,5 +1,5 @@
-# fstop-mint-installer *UNDER CONSTRUCTION*
-Install F-Stop Mint on Debian Sid
+# fstop-mint-isogen *UNDER CONSTRUCTION*
+Prepare fstop for publication on image files...
 
 ## NOTE
 to test (use in a vm for now):
