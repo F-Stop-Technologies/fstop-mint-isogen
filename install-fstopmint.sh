@@ -20,7 +20,7 @@ sudo apt install -y python3-torch python3-tk python3-numpy python3-torchvision
 pip3 install openai duckduckgo3 requests python-dotenv colorama
 pip3 install opencv-python
 
-echo Installing FireFox prefs...
+echo Installing FireFox prefs....
 sudo -u $USER firefox
 sleep 7
 killall firefox-bin
