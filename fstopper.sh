@@ -10,9 +10,11 @@ sudo apt install -y git wget wine dosbox flatpak snapd python3 psmisc python3-pi
 
 sudo apt install firmware-iwlwifi
 
+sudo rm /usr/bin/node-get
 sudo wget -O /usr/bin/node-get https://raw.githubusercontent.com/F-Stop-Technologies/node-get/main/node-get
 sudo chmod +x /usr/bin/node-get
 
+sudo rm /usr/bin/nvidia-easyinstall
 sudo wget -O /usr/bin/nvidia-easyinstall https://raw.githubusercontent.com/F-Stop-Technologies/nvidia-installer/main/nvidia-easyinstall
 sudo chmod +x /usr/bin/nvidia-easyinstall
 
