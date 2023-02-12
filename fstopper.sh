@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo rm -rf /tmp/* /home/remastersys/*
-sudo rm -f /tmp/*.* /home/remastersys/*.*
+sudo rm -rf /tmp/*
+sudo rm -f /tmp/*.*
 echo "Preparing packages..."
 sudo dpkg --add-architecture i386
 sudo apt update
