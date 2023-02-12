@@ -7,10 +7,12 @@ sudo dpkg --add-architecture i386
 sudo apt update
 echo "Ensuring the important stuff's up-to-date..."
 sudo apt-get upgrade
-sudo apt install genisoimage unzip 7zip debian-installer
+sudo apt install -y genisoimage unzip 7zip debian-installer
 sudo apt install -y git wget wine dosbox flatpak snapd python3 psmisc python3-pip bcmwl-kernel-source firmware-linux-nonfree firmware-misc-nonfree
 
 sudo apt install firmware-iwlwifi
+
+sudo apt install -y python3-full
 
 sudo rm /usr/bin/node-get
 sudo wget -O /usr/bin/node-get https://raw.githubusercontent.com/F-Stop-Technologies/node-get/main/node-get
